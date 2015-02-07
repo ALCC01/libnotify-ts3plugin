@@ -113,7 +113,7 @@ int ts3plugin_onTextMessageEvent(uint64 serverConnectionHandlerID, anyID targetM
 void send_notification(uint64 serverConnectionHandlerID, const char* event_name, const char* message) {
 	notify_init(event_name);
 	NotifyNotification * notification = notify_notification_new(event_name, message, "/usr/share/icons/Numix/256x256/actions/mail-mark-read.svg");
-	notify_notification_set_timeout(notification, NOTIFICATION_DURATION);
+	notify_notification_set_timeout(notification, 90);
 	if(!notify_notification_show(notification, NULL)) {
 		ts3Functions.logMessage("libnotify error", LogLevel_ERROR, "Plugin", serverConnectionHandlerID);
 	}
