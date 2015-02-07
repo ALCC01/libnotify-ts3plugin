@@ -1,7 +1,11 @@
-TeamSpeak 3 libnotify plugin
+TeamSpeak 3 Libnotify
 ============================
 
-Get TeamSpeak3 chat and poke notifications for systems using libnotify.
+Libnotify + TeamSpeak = nice Ubuntu notifications.
+Numix Project's icons are required (if you don't want to edit the icon location in the source code).
+I recommend to also install NotifyOSD Configuration for dismissable notifications and custom timeout.
+
+Original work from Joachrica's repository.
 
 **Build:**
 
